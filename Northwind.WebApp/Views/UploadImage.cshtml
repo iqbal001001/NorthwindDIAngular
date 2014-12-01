@@ -1,0 +1,6 @@
+﻿@using Northwind.WebApp.Htmlhelper
+@model byte[]
+
+@Html.Image("Photo", @Model == null ? null : @Model.Photo, null, null)
+<input type="file" name="file" formmethod="post" id="file" class="btn navbar-btn" />
+<input type="submit" value="Upload" name="Upload" class="btn btn-success" />         
