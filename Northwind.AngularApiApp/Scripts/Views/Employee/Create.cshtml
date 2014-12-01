@@ -1,0 +1,133 @@
+﻿<form ng-submit="Create()">
+    <div class="form-horizontal">
+        <h4>Employee</h4>
+        <hr />
+
+       
+        <div class="form-group">
+            <label for="Firstname">Last Name</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.LastName" id="LastName" />
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Firstname">First Name</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.FirstName" id="FirstName" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.Title" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="TitleOfCourtesy">Title Of Courtesy</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.TitleOfCourtesy" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="BirthDate">BirthDate</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.BirthDate" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="HireDate">HireDate</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.HireDate" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Address">Address</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.Address" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="City">City</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.City" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Region">Region</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.Region" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="PostalCode">PostalCode</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.PostalCode" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Country">Country</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.Country" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="HomePhone">HomePhone</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.HomePhone" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Extension">Extension</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.Extension" id="Title" />
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="Notes">Notes</label>
+            <div class="col-md-10">
+                <input type="text" ng-model="Employee.Notes" id="Title" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="ReportsTo">ReportsTo</label>
+            <div class="col-md-10">
+
+            </div>
+        </div>
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.PhotoPath, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PhotoPath, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PhotoPath, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" name="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div ng-if="EmployeeCreateForm.CreateFailure">
+    D'oh!
+</div>

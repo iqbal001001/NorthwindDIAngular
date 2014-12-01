@@ -1,0 +1,148 @@
+﻿
+
+<h2>Edit</h2>
+
+
+
+
+
+<form ng-submit="Edit()">
+    <div class="form-horizontal">
+        <h4>Employee</h4>
+        <hr />
+
+        <input type="text" ng-model="Employee.EmployeeID" id="EmployeeID" />
+
+        <div class="form-group">
+            <label for="Firstname">Last Name</label>
+          
+                <input type="text" ng-model="Employee.LastName" id="LastName" class="form-control" />
+
+          
+        </div>
+
+        <div class="form-group">
+            <label for="Firstname">First Name</label>
+           
+                <input type="text" ng-model="Employee.FirstName" id="FirstName" class="form-control" />
+          
+        </div>
+
+        <div class="form-group">
+            <label for="Title">Title</label>
+ 
+                <input type="text" ng-model="Employee.Title" id="Title" class="form-control" />
+            
+        </div>
+
+        <div class="form-group">
+            <label for="TitleOfCourtesy">Title Of Courtesy</label>
+        
+                <input type="text" ng-model="Employee.TitleOfCourtesy" id="TitleOfCourtesy" />
+           
+        </div>
+
+        <div class="form-group">
+            <label for="BirthDate">BirthDate</label>
+     
+                <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                <input type="text" ng-model="Employee.BirthDate" id="BirthDate" class="form-control datecontrol" />
+            
+        </div>
+
+        <div class="form-group">
+            <label for="HireDate">HireDate</label>
+        
+                <input type="text" ng-model="Employee.HireDate" id="Title" class="form-control" />
+           
+        </div>
+
+        <div class="form-group">
+            <label for="Address">Address</label>
+           
+                <input type="text" ng-model="Employee.Address" id="Title" class="form-control" />
+           
+        </div>
+
+        <div class="form-group">
+            <label for="City">City</label>
+           
+                <input type="text" ng-model="Employee.City" id="Title" class="form-control" />
+          
+        </div>
+
+        <div class="form-group">
+            <label for="Region">Region</label>
+           
+                <input type="text" ng-model="Employee.Region" id="Title" class="form-control" />
+            
+        </div>
+
+        <div class="form-group">
+            <label for="PostalCode">PostalCode</label>
+           
+                <input type="text" ng-model="Employee.PostalCode" id="Title" class="form-control" />
+            
+        </div>
+
+        <div class="form-group">
+            <label for="Country">Country</label>
+        
+                <input type="text" ng-model="Employee.Country" id="Title" class="form-control" />
+      
+        </div>
+
+        <div class="form-group">
+            <label for="HomePhone">HomePhone</label>
+ 
+                <input type="text" ng-model="Employee.HomePhone" id="Title" class="form-control" />
+    
+        </div>
+
+        <div class="form-group">
+            <label for="Extension">Extension</label>
+ 
+                <input type="text" ng-model="Employee.Extension" id="Title" class="form-control" />
+
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="Notes">Notes</label>
+
+                <input type="text" ng-model="Employee.Notes" id="Title" class="form-control" />
+
+        </div>
+
+        <div class="form-group">
+            <label for="ReportsTo">ReportsTo</label>
+            <div class="col-md-10">
+
+            </div>
+        </div>
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.PhotoPath, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PhotoPath, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PhotoPath, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" name="Edit" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div ng-if="editForm.editFailure">
+    D'oh!
+</div>
+    <div>
+        <a ng-href="/EmployeeIndex">index</a>
+    </div>
+
+
